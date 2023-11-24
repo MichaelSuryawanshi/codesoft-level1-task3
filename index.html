@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="calculator.css">
+  <script src="calc.js"></script>
+  <script src="https://kit.fontawesome.com/f34fb94d7e.js" crossorigin="anonymous"></script>
+  </head>
+ <body>
+ <form name="calc" id="calc">
+  <table>
+  <tr>
+  <td id="td1"rowspan="" colspan="4">
+    <input type="text" name="result" id="result" disabled/>
+  </td>
+  </tr>
+  <tr>
+  <td rowspan="">
+    <input type="button" value="AC" onclick="clearall()"/>
+  </td>
+  <td rowspan="">
+    <input type="button" value="÷" onclick="calc.result.value+='/'"/>
+  </td>
+  <td>
+    <input type="button" value="×" onclick="calc.result.value+='*'"/>
+  </td>
+  <td>
+    <input type="button" id="back" value="&#x2190" onclick="back1()" />
+  </td>
+  </tr>
+  <tr>
+  <td>
+    <input type="button" value="7" onclick="calc.result.value+='7'"/>
+  </td>
+  <td rowspan="">
+    <input type="button" value="8" onclick="calc.result.value+='8'"/>
+  </td>
+  <td>
+    <input type="button" value="9" onclick="calc.result.value+='9'"/>
+  </td>
+  <td>
+    <input type="button" value="%" onclick="calc.result.value+='%'"/>
+  </td>
+  </tr>
+  <tr>
+  <td>
+    <input type="button" value="4" onclick="calc.result.value+='4'"/>
+  </td>
+  <td rowspan="">
+    <input type="button" value="5" onclick="calc.result.value+='5'"/>
+  </td>
+  <td>
+    <input type="button" value="6" onclick="calc.result.value+='6'"/>
+  </td>
+  <td>
+    <input type="button" value="-" onclick="calc.result.value+='-'"/>
+  </td>
+  </tr>
+  <td>
+    <input type="button" value="1" onclick="calc.result.value+='1'"/>
+  </td>
+  <td rowspan="">
+    <input type="button" value="2" onclick="calc.result.value+='2'"/>
+  </td>
+  <td>
+    <input type="button" value="3" onclick="calc.result.value+='3'"/>
+  </td>
+  <td>
+    <input type="button" value="+" onclick="calc.result.value+='+'"/>
+  </td>
+  </tr>
+  <td>
+    <input type="button" value="0" onclick="calc.result.value+='0'"/>
+  </td>
+  <td rowspan="">
+    <input type="button" value="." onclick="calc.result.value+='.'"/>
+  </td>
+  <td id="r"colspan="2">
+    <input type="button" value="=" onclick="calc.result.value=eval(calc.result.value)"/>
+  </td>
+  
+  </tr>
+  </table>
+  </form>
+ </body>
+</html>
